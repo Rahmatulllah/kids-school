@@ -150,18 +150,19 @@ hr {
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .card-containar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: ;
+    gap: 30px;
 }
 
 .card {
     max-width: 350px;
-    max-height: 450px;
+    max-height: 470px;
     border-radius: 18px;
     box-shadow: 0 0 28px 0.90px rgba(0, 0, 0, 0.05);
     padding: 30px;
@@ -191,9 +192,50 @@ hr {
     font-size: 0.8rem;
     font-weight: 500;
 }
-#card
+#card-1{
+    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF, #FFFFFF);
+}
+#card-2{
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF, #FFFFFF);
+}
+#card-3{
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF, #FFFFFF);
+}
+#card-1 a{
+    color: #64C8FF;
+}
+#card-2 a{
+     color: #F0AA00;
+}
+#card-3 a{
+    color: #8700FF;
+}
+/* symble styles */
+.symble-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 80px auto;
+}
+.symble-container img{
+    width: 15px;
+    height: 20px;
+    
+}
+.symble{
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.symble > img{
+    margin: 0 auto;
+}
 
 @media screen and (min-width:577px) {
+
     hr {
         display: none;
     }
