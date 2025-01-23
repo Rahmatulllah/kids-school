@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,267 +8,135 @@
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-style: normal;
+  }
+
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* shared styles */
-.display-flex {
+
+.color-org{
+    color: #FEA301;
+}
+.color-blu{
+    color: #01ACFD;
+}
+.width{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.flex{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* navbar styels */
-.nav-item {
-    list-style: none;
+.big-btn{
+    border-radius: 12px ;
+    width: 12.31rem;
+    height: 3.12rem;
+    font-size: 1.25rem;
+    background-color: #FEA301;
+    border: none;
+    
+}
+.small-btn{
+    background-color:#95B226 ;
+    font-size: 15.34px;
+    font-weight: 500;
+    position: relative;
+    left: 38px;
+    bottom: 19.5px;
+    border: none;
+    width: 10.87rem;
+    height: 2.37rem;
+    color: #FFFFFF;
+    border-radius: 47.93px;
+}
+.color-white{
+    color: #FFFFFF;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main{
+    background: linear-gradient(to top, #FEA3014D -6%, #FFFFFF 28%);
+
 }
 
-.nav-item a {
-    text-decoration: none;
+
+
+/* Navbar styles */
+
+.nav-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6.23%;
+    margin: 20px auto;
+    align-items: center;
 }
-
-.navbar {
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 20px 140px;
+.nav-icon-box{
+    gap: 11px;
+    justify-content: flex-start;
 }
-
-.link-container {
-    gap: 25px;
-}
-
-.site-name {
-    align-content: baseline;
-}
-
-.logo {
-    max-width: 50px;
-    height: auto;
-
-}
-
-.school {
+.nav-school{
     font-size: 2rem;
     font-weight: bold;
 }
-
-.btn-primary {
-    text-decoration: none;
-    color: white;
-    background-color: #FEA301;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 10px 30px;
-    border-radius: 12px;
-
-}
-
-.bar-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.nav-links1 {
-    font-size: 1rem;
+.nav-section-titles ul li{
+    list-style: none;
     font-weight: bold;
-    color: #FEA301;
-}
-
-.nav-links2 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: skyblue;
-}
-
-.nav-links3 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #05D4DF;
-}
-
-.nav-links4 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #5D58EF;
-}
-
-hr {
-    background-color: #FEA301;
-    max-width: 100%;
-    height: 3px;
-
-}
-
-/* style banner section */
-.banner-container {
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    max-width: 100%;
-    margin: 0 140px;
-    gap: 50px;
-}
-
-.banner-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 24px;
-}
-
-.Empowering {
-    color: orange;
-}
-
-.vision {
-    color: #01ACFD;
-}
-
-.banner-description {
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-bottom: 24px;
-}
-
-.btn-banner {
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    border-radius: 12px;
-    padding: 10px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/* card section styles*/
-.card-section {
-    width: 100vw;
-    background-image: url(../assets/bg.png);
-    background-repeat: no-repeat;
-}
-
-.Curriculum-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-
-.card-containar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.card {
-    max-width: 350px;
-    max-height: 470px;
-    border-radius: 18px;
-    box-shadow: 0 0 28px 0.90px rgba(0, 0, 0, 0.05);
-    padding: 30px;
-    text-align: center;
-}
-
-.card img {
-    max-width: 135px;
-    height: auto;
-    margin-bottom: 30px;
-
-}
-.card h3{
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #202020;
-    margin-bottom: 30px;
-}
-.card p{
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-    color: rgba(128, 128, 128, 1);
-}
-.card a{
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-#card-1{
-    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF, #FFFFFF);
-}
-#card-2{
-    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF, #FFFFFF);
-}
-#card-3{
-    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF, #FFFFFF);
-}
-#card-1 a{
-    color: #64C8FF;
-}
-#card-2 a{
-     color: #F0AA00;
-}
-#card-3 a{
-    color: #8700FF;
-}
-/* symble styles */
-.symble-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 80px auto;
-}
-.symble-container img{
-    width: 15px;
-    height: 20px;
+    font-size: 1.25em;
     
 }
-.symble{
-    background-color: orange;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+.nav-section-titles ul{
+    gap: 2rem;
 }
-.symble > img{
-    margin: 0 auto;
+.color-3{
+    color: #05D4DF;
 }
-
-@media screen and (min-width:577px) {
-
-    hr {
-        display: none;
-    }
-
-    .bar-icon {
-        display: none;
-    }
+.color-4{
+    color: #5D58EF;
+}
+.nav-btn{
+    text-align: right;
+}
+.nav-btn button{
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #FFFFFF;
 }
 
-@media screen and (max-width:576px) {
-    .banner-container {
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
 
-    .banner-img img {
-        width: 100vw;
-        margin: 0 auto;
 
-    }
-
-    .About-banner {
-        text-align: center;
-    }
-
-    .navbar {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .School,
-    .link-container,
-    .btn-primary {
-        display: none;
-    }
-
+/* banner styles */
+.banner-container{
+    justify-content: space-between;
 }
+.banner-content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 61px;
+}
+.banner-content p{
+    font-size: 1.25rem;
+}
+.banner-content button{
+    background-color: #111111;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
 
